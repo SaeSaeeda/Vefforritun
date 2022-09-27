@@ -105,6 +105,10 @@
     font-size: 45px;
   }
 
+  .ph{
+    font-size: large;
+  }
+
 
   img {
     max-width: 100%;
@@ -238,6 +242,7 @@
 
   p {
     display: block;
+    font-size: 1rem;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
