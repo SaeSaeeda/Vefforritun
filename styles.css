@@ -81,13 +81,10 @@
     display: inline-block;
   }
   
-  #flexybuttons {
+  #fbuttons {
     display: flex;
-    gap: 4%;
-    padding-top: 5%;
     width: auto;
     height: max-content;
-    margin-left: 2%;
     flex-direction: row;
     margin-bottom: 5px;
 }
@@ -276,5 +273,4 @@
 
   .footer{
     height:20px;
-
   }
