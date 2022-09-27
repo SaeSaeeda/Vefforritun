@@ -81,6 +81,20 @@
     display: inline-block;
   }
   
+  .buttonh {
+    background-color: #F0f8ff;
+    color: #000000;
+    font-size: large;
+    object-fit: contain;
+    height: max-content;
+    width: max-content;
+    border-radius: 5px;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
   #fbuttons {
     display: flex;
     width: auto;
@@ -107,6 +121,7 @@
 
   .ph{
     font-size: large;
+    height: 40px;
   }
 
 
