@@ -45,7 +45,7 @@ html {
   src: url(./fonts/nunito.ttf) format('woff');
 }
 
-/* Almennt */
+/* preprescribed */
 
 body {
   color: var(--color-text);
@@ -65,12 +65,12 @@ img {
 .button {
   display: inline-block;
   border: 1px solid var(--color-border);
-  border-radius: 5px;
   padding: calc(var(--spacing) / 2) calc(var(--spacing));
   font-family: var(--font-family-base);
-  text-decoration: none;
   color: var(--color-text);
   background-color: var(--color-primary);
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .button-secondary {
@@ -79,24 +79,25 @@ img {
   background-color: transparent;
 }
 
-/* Layout */
+/* page */
 
 .wrapper {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 100%;
   gap: var(--gutter);
-  margin: 0 auto;
   width: calc(100% - (2 * var(--offset)));
   max-width: var(--max-width);
+  margin: 0 auto;
+  grid-template-rows: auto;
 }
 
 main {
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 100%;
   gap: var(--gutter);
   margin-bottom: var(--gutter);
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  
 }
 .info-boxes {
   display: grid;
@@ -109,7 +110,7 @@ main {
 
 /*media queries*/
 
-@media (min-width: 800px) {
+@media (min-width: 600px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -145,7 +146,7 @@ main {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .info {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -190,9 +191,7 @@ header {
 
 
 header .content {
-  
   z-index: 2;
-
   display: flex;
   flex-direction: column;
   gap: calc(var(--spacing) * 2);
@@ -220,7 +219,7 @@ header .protection {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Info blokk */
+/* Info section */
 
 .info .content p {
   margin-bottom: calc(var(--spacing) * 2);
@@ -244,13 +243,13 @@ header .protection {
   order: 2;
 }
 
-/* Examples */
+/* Examples section */
 
 .examples h2 {
   margin-bottom: var(--spacing);
 }
 
-/* Cards */
+/* Cards section */
 
 .card {
   display: flex;
@@ -287,10 +286,13 @@ header .protection {
   flex: 1;
 }
 
+/* footer section*/
+
 footer {
+  text-align: center;
+  width: 100%;
   padding: var(--spacing);
   color: var(--color-text);
   background-color: var(--color-primary);
-  text-align: center;
-  width: 100%;
+  
 }
